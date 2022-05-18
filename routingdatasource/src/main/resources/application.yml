@@ -1,0 +1,16 @@
+datasource:
+  korea:
+    url: jdbc:mysql://localhost:3306/koreadb?userSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  japan:
+    url: jdbc:mysql://localhost:3306/japandb?userSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+spring:
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    show-sql: true
